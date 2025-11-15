@@ -20,7 +20,7 @@ export default function Home() {
             <img
               src="/aeon-logo.png"
               alt="Aeon logo"
-              className="mx-auto mb-4 h-12 w-auto"
+              className="mx-auto mb-4 h-20 w-auto"
               aria-hidden="false"
             />
             <span className="self-center rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-white/70 md:self-start">
@@ -39,7 +39,7 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-4 md:flex-row md:items-center md:gap-6">
             <a
-              className="inline-flex items-center justify-center rounded-full bg-[var(--aeon-tint)] px-10 py-3 text-base font-semibold text-white transition hover:bg-white hover:text-black"
+              className="inline-flex items-center justify-center rounded-full bg-[var(--aeon-tint)] px-10 py-3 text-base font-semibold text-white transition hover:bg-[var(--aeon-tint)]/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--aeon-tint)]"
               href="mailto:info@engineailabs.com"
             >
               Get Aeon (early access)
@@ -49,7 +49,7 @@ export default function Home() {
                 Share with family
               </span>
               <span className="rounded-full border border-white/10 px-3 py-1 text-xs uppercase tracking-[0.3em] text-white/70">
-                Built by Engine
+                Built by Engine AI Labs
               </span>
             </div>
           </div>

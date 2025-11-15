@@ -37,15 +37,22 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/aeon-logo.png",
+        url: "/favicon-aeon.png",
         type: "image/png",
+        sizes: "32x32",
+      },
+      {
+        url: "/favicon-aeon.png",
+        type: "image/png",
+        sizes: "192x192",
       },
     ],
     apple: [
       {
-        url: "/aeon-logo.png",
+        url: "/favicon-aeon.png",
       },
     ],
+    shortcut: ["/favicon-aeon.png"],
   },
 };
 
