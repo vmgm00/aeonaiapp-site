@@ -1,0 +1,37 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aeonGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0b0f" />
+      <stop offset="100%" stop-color="#1a1b24" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#aeonGradient)" rx="40" />
+  <text
+    x="120"
+    y="320"
+    font-family="Geist, 'Sofia Pro', 'Space Grotesk', sans-serif"
+    font-size="130"
+    fill="#ffffff"
+    font-weight="600"
+  >
+    Aeon
+  </text>
+  <text
+    x="120"
+    y="410"
+    font-family="Geist, 'Sofia Pro', 'Space Grotesk', sans-serif"
+    font-size="56"
+    fill="#ffffffcc"
+  >
+    Shareable AI chat friend
+  </text>
+  <text
+    x="120"
+    y="500"
+    font-family="Geist, 'Sofia Pro', 'Space Grotesk', sans-serif"
+    font-size="36"
+    fill="#9FE8C1"
+  >
+    www.aeonaiapp.com
+  </text>
+</svg>
