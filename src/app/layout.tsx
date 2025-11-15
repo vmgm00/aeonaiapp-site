@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -36,7 +35,17 @@ export const metadata: Metadata = {
     images: ["/og.svg"],
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      {
+        url: "/aeon-logo.png",
+        type: "image/png",
+      },
+    ],
+    apple: [
+      {
+        url: "/aeon-logo.png",
+      },
+    ],
   },
 };
 
@@ -57,17 +66,14 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col">
           <header className="border-b border-white/10">
             <div className="mx-auto flex w-full max-w-5xl items-center justify-start px-6 py-5">
-              <div className="flex items-center gap-3 text-[var(--aeon-text)]">
-                <Image
-                  src="/aeon-logo.svg"
+              <div className="flex items-center gap-2 text-[var(--aeon-text)]">
+                <img
+                  src="/aeon-logo.png"
                   alt="Aeon logo"
-                  width={32}
-                  height={32}
-                  priority
+                  className="h-7 w-auto"
+                  aria-hidden="false"
                 />
-                <span className="text-lg font-semibold tracking-tight">
-                  Aeon
-                </span>
+                <span className="text-lg font-semibold tracking-tight">Aeon</span>
               </div>
             </div>
           </header>

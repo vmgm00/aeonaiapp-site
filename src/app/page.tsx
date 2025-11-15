@@ -17,6 +17,12 @@ export default function Home() {
       <div className="w-full max-w-4xl rounded-3xl border border-white/10 bg-[var(--aeon-card)] p-10 text-center shadow-[0_25px_120px_rgba(0,0,0,0.45)] md:text-left">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
+            <img
+              src="/aeon-logo.png"
+              alt="Aeon logo"
+              className="mx-auto mb-4 h-12 w-auto"
+              aria-hidden="false"
+            />
             <span className="self-center rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-white/70 md:self-start">
               Friendly AI companion
             </span>
@@ -33,7 +39,7 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-4 md:flex-row md:items-center md:gap-6">
             <a
-              className="inline-flex items-center justify-center rounded-full bg-[var(--aeon-tint)] px-10 py-3 text-base font-semibold text-black transition hover:bg-white"
+              className="inline-flex items-center justify-center rounded-full bg-[var(--aeon-tint)] px-10 py-3 text-base font-semibold text-white transition hover:bg-white hover:text-black"
               href="mailto:info@engineailabs.com"
             >
               Get Aeon (early access)
