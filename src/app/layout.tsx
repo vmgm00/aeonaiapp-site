@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -25,24 +26,22 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.aeonaiapp.com"),
   title: "Aeon — Shareable AI chat friend",
-  description: "Aeon is your friendly AI companion you can share with family and friends.",
+  description:
+    "Aeon is your friendly AI companion you can share with family and friends.",
   openGraph: {
     title: "Aeon — Shareable AI chat friend",
     description:
       "Aeon is your friendly AI companion you can share with family and friends.",
     url: "https://www.aeonaiapp.com",
-    images: [
-      {
-        url: "/og.svg",
-        width: 1200,
-        height: 630,
-        alt: "Aeon — Shareable AI chat friend",
-      },
-    ],
+    images: ["/og.svg"],
   },
   icons: {
     icon: "/favicon.svg",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0b0b0f",
 };
 
 export default function RootLayout({
@@ -53,20 +52,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-[#0b0b0f] text-white antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-[var(--aeon-bg)] text-[var(--aeon-text)] antialiased`}
       >
         <div className="flex min-h-screen flex-col">
           <header className="border-b border-white/10">
             <div className="mx-auto flex w-full max-w-5xl items-center justify-start px-6 py-5">
-              <span className="text-lg font-semibold tracking-tight text-white">
-                Aeon
-              </span>
+              <div className="flex items-center gap-3 text-[var(--aeon-text)]">
+                <Image
+                  src="/aeon-logo.svg"
+                  alt="Aeon logo"
+                  width={32}
+                  height={32}
+                  priority
+                />
+                <span className="text-lg font-semibold tracking-tight">
+                  Aeon
+                </span>
+              </div>
             </div>
           </header>
           <main className="flex flex-1">{children}</main>
           <footer className="border-t border-white/10">
-            <div className="mx-auto flex w-full max-w-5xl justify-center px-6 py-6 text-sm">
-              <nav className="flex flex-wrap items-center gap-2 text-[#9FE8C1]">
+            <div className="mx-auto flex w-full max-w-5xl flex-col items-center gap-3 px-6 py-6 text-sm">
+              <nav className="flex flex-wrap items-center gap-2 text-[var(--aeon-tint)]">
                 <a
                   className="font-medium transition hover:text-white"
                   href={SUPPORT_URL}
@@ -94,6 +102,18 @@ export default function RootLayout({
                   Terms
                 </a>
               </nav>
+              <p className="text-xs text-white/70">
+                An{" "}
+                <a
+                  className="font-medium text-[var(--aeon-tint)]"
+                  href="https://www.engineailabs.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Engine AI Labs LLC
+                </a>{" "}
+                product
+              </p>
             </div>
           </footer>
         </div>
