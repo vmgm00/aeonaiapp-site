@@ -39,7 +39,7 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-4 md:flex-row md:items-center md:gap-6">
             <a
-              className="inline-flex items-center justify-center rounded-full bg-[var(--aeon-tint)] px-10 py-3 text-base font-semibold text-white transition hover:bg-[var(--aeon-tint)]/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--aeon-tint)]"
+              className="inline-flex items-center justify-center rounded-full bg-[var(--aeon-tint)] px-10 py-3 text-base font-semibold text-white transition hover:bg-[var(--aeon-tint)]/90 hover:!text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--aeon-tint)] focus-visible:!text-white !text-white"
               href="mailto:info@engineailabs.com"
             >
               Get Aeon (early access)
