@@ -140,6 +140,7 @@ function WaitlistDialog({ onClose, onSuccess }: WaitlistDialogProps) {
 
       setValues(initialValues);
       onSuccess();
+      setTimeout(() => onClose(), 1500);
     } catch (error) {
       setServerError(
         error instanceof Error
