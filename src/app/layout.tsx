@@ -101,6 +101,13 @@ export default function RootLayout({
                 <span className="text-white/50">·</span>
                 <a
                   className="font-medium transition hover:text-white"
+                  href="/pricing"
+                >
+                  Plans
+                </a>
+                <span className="text-white/50">·</span>
+                <a
+                  className="font-medium transition hover:text-white"
                   href={PRIVACY_URL}
                   target="_blank"
                   rel="noopener noreferrer"
