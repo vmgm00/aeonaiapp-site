@@ -77,29 +77,31 @@ export default function Pricing() {
             </div>
           ))}
         </div>
-        <div className="space-y-3 text-center text-sm text-white/60">
-          <p>
+        <div className="grid gap-4 text-sm text-white/70 md:grid-cols-2">
+          <div className="rounded-3xl border border-white/15 bg-[var(--aeon-card)]/90 p-4 text-center shadow-[0_35px_160px_rgba(138,180,255,0.35)] ring-1 ring-[rgba(138,180,255,0.25)]">
             Prices in USD; regional pricing may vary. Features subject to
             change. App use requires age 13+ and acceptance of the Privacy
             Policy and Terms.
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-4 text-[var(--aeon-tint)]">
-            <a
-              href="https://www.engineailabs.com/privacy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-white"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="https://www.engineailabs.com/terms"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-white"
-            >
-              Terms
-            </a>
+          </div>
+          <div className="rounded-3xl border border-white/15 bg-[var(--aeon-card)]/90 p-4 text-center shadow-[0_35px_160px_rgba(138,180,255,0.35)] ring-1 ring-[rgba(138,180,255,0.25)]">
+            <div className="flex flex-wrap items-center justify-center gap-4 text-[var(--aeon-tint)]">
+              <a
+                href="https://www.engineailabs.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-white"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="https://www.engineailabs.com/terms"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-white"
+              >
+                Terms
+              </a>
+            </div>
           </div>
         </div>
       </div>

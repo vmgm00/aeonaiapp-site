@@ -1,3 +1,5 @@
+import { WaitlistTrigger } from "@/components/WaitlistDialog";
+
 const SUPPORT_URL =
   process.env.NEXT_PUBLIC_ENGINE_SUPPORT ??
   "https://www.engineailabs.com/support";
@@ -48,13 +50,10 @@ export default function Home() {
             >
               Aeon Web
             </a>
-            <a
+            <WaitlistTrigger
               className="inline-flex items-center justify-center rounded-full px-10 py-3 text-base font-semibold text-white transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--aeon-tint)] !text-white"
               style={{ backgroundColor: "rgba(138, 180, 255, 0.65)" }}
-              href="mailto:waitinglist@aeonaiapp.com?subject=Sign%20Up%20for%20Aeon%20App%20Waiting%20List&body=Full%20name%3A%0A%0AAge%20(13%2B%20required)%3A%0A%0AEmail%3A%0A%0AHow%20do%20you%20plan%20to%20use%20Aeon%3F%0A"
-            >
-              Aeon App Waiting List
-            </a>
+            />
             <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-white/60 md:justify-start">
               <span className="rounded-full border border-white/10 px-3 py-1 text-xs uppercase tracking-[0.3em] text-white/70">
                 Share with family
