@@ -2,7 +2,7 @@
 
 :root {
   --aeon-tint: #8ab4ff;
-  --aeon-bg: #0b0b0f;
+  --aeon-bg: #000000;
   --aeon-card: #1c1c1e;
   --aeon-text: #ffffff;
   --background: var(--aeon-bg);

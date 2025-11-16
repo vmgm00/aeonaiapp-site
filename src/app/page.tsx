@@ -14,15 +14,17 @@ export default function Home() {
 
   return (
     <section className="flex w-full flex-1 items-center justify-center px-6 py-16">
-      <div className="w-full max-w-4xl rounded-3xl border border-white/10 bg-[var(--aeon-card)] p-10 text-center shadow-[0_25px_120px_rgba(0,0,0,0.45)] md:text-left">
+      <div className="w-full max-w-4xl rounded-3xl border border-white/10 bg-[var(--aeon-card)] p-10 text-center shadow-[0_35px_160px_rgba(138,180,255,0.35)] ring-1 ring-[rgba(138,180,255,0.25)] md:text-left">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
-            <img
-              src="/aeon-logo.png"
-              alt="Aeon logo"
-              className="mx-auto mb-4 h-20 w-auto"
-              aria-hidden="false"
-            />
+            <span className="mx-auto mb-4 flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border border-white/15">
+              <img
+                src="/aeon-logo.png"
+                alt="Aeon logo"
+                className="h-full w-full scale-150 object-cover opacity-80"
+                aria-hidden="false"
+              />
+            </span>
             <span className="self-center rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-white/70 md:self-start">
               Friendly AI companion
             </span>
@@ -39,7 +41,8 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-4 md:flex-row md:items-center md:gap-6">
             <a
-              className="inline-flex items-center justify-center rounded-full bg-[var(--aeon-tint)] px-10 py-3 text-base font-semibold text-white transition hover:bg-[var(--aeon-tint)]/90 hover:!text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--aeon-tint)] focus-visible:!text-white !text-white"
+              className="inline-flex items-center justify-center rounded-full px-10 py-3 text-base font-semibold text-white transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--aeon-tint)] !text-white"
+              style={{ backgroundColor: "rgba(138, 180, 255, 0.65)" }}
               href="mailto:info@engineailabs.com"
             >
               Get Aeon (early access)

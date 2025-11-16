@@ -37,22 +37,22 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/favicon-aeon.png",
+        url: "/aeon-logo.png",
         type: "image/png",
         sizes: "32x32",
       },
       {
-        url: "/favicon-aeon.png",
+        url: "/aeon-logo.png",
         type: "image/png",
         sizes: "192x192",
       },
     ],
     apple: [
       {
-        url: "/favicon-aeon.png",
+        url: "/aeon-logo.png",
       },
     ],
-    shortcut: ["/favicon-aeon.png"],
+    shortcut: ["/aeon-logo.png"],
   },
 };
 
@@ -74,12 +74,14 @@ export default function RootLayout({
           <header className="border-b border-white/10">
             <div className="mx-auto flex w-full max-w-5xl items-center justify-start px-6 py-5">
               <div className="flex items-center gap-2 text-[var(--aeon-text)]">
-                <img
-                  src="/aeon-logo.png"
-                  alt="Aeon logo"
-                  className="h-7 w-auto"
-                  aria-hidden="false"
-                />
+                <span className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-white/15 bg-white/5">
+                  <img
+                    src="/aeon-logo.png"
+                    alt="Aeon logo"
+                    className="h-full w-full scale-125 object-cover"
+                    aria-hidden="false"
+                  />
+                </span>
                 <span className="text-lg font-semibold tracking-tight">Aeon</span>
               </div>
             </div>
