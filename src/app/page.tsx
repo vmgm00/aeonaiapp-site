@@ -9,7 +9,8 @@ const PRIVACY_URL =
 const TERMS_URL =
   process.env.NEXT_PUBLIC_ENGINE_TERMS ??
   "https://www.engineailabs.com/terms";
-const WEB_URL = process.env.NEXT_PUBLIC_AEON_WEB_URL ?? "/app";
+const WEB_URL =
+  process.env.NEXT_PUBLIC_AEON_WEB_URL ?? "https://app.aeonaiapp.com";
 
 export default function Home() {
   const linkClassName =
@@ -38,7 +39,7 @@ export default function Home() {
               Helpful, playful, and easy to share with family and friends.
             </p>
             <p className="text-sm font-medium text-white/60">
-              App coming to the Apple App Store soon.
+              Use Aeon Web in your browser while the iOS app gets ready.
             </p>
           </div>
 
