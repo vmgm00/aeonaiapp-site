@@ -112,7 +112,7 @@ export default function RootLayout({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Privacy
+                  Privacy Policy
                 </a>
                 <span className="text-white/50">·</span>
                 <a
@@ -121,7 +121,7 @@ export default function RootLayout({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Terms
+                  Terms of Service
                 </a>
               </nav>
               <p className="text-xs text-white/70">
