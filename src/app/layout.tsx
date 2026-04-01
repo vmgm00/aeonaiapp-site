@@ -24,13 +24,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.aeonaiapp.com"),
-  title: "Aeon — Shareable AI chat friend",
+  title: "AeonAI — Shareable AI chat friend",
   description:
-    "Aeon is your friendly AI companion you can share with family and friends.",
+    "AeonAI is your friendly AI companion you can share with family and friends.",
   openGraph: {
-    title: "Aeon — Shareable AI chat friend",
+    title: "AeonAI — Shareable AI chat friend",
     description:
-      "Aeon is your friendly AI companion you can share with family and friends.",
+      "AeonAI is your friendly AI companion you can share with family and friends.",
     url: "https://www.aeonaiapp.com",
     images: ["/og.svg"],
   },
@@ -78,12 +78,12 @@ export default function RootLayout({
                 <span className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-white/15 bg-white/5">
                   <img
                     src="/aeon-logo.png"
-                    alt="Aeon logo"
+                    alt="AeonAI logo"
                     className="h-full w-full scale-125 object-cover"
                     aria-hidden="false"
                   />
                 </span>
-                <span className="text-lg font-semibold tracking-tight">Aeon</span>
+                <span className="text-lg font-semibold tracking-tight">AeonAI</span>
               </div>
             </div>
           </header>

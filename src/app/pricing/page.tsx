@@ -1,6 +1,6 @@
 const plans = [
   {
-    name: "Aeon Free",
+    name: "AeonAI Free",
     price: "$0.00",
     cadence: "",
     features: [
@@ -13,7 +13,7 @@ const plans = [
     ],
   },
   {
-    name: "Aeon Plus",
+    name: "AeonAI Plus",
     price: "$2.00",
     cadence: "/ month (Monthly plan)",
     features: [
@@ -25,7 +25,7 @@ const plans = [
     ],
   },
   {
-    name: "Aeon Pro",
+    name: "AeonAI Pro",
     price: "$5.00",
     cadence: "/ month (Monthly plan)",
     features: [
@@ -35,7 +35,7 @@ const plans = [
     ],
   },
   {
-    name: "Aeon Pro Annual",
+    name: "AeonAI Pro Annual",
     price: "$45.00",
     cadence: "/ year (Annual plan • 25% off)",
     features: [
@@ -53,7 +53,7 @@ export default function Pricing() {
         <div className="text-center">
           <h1 className="text-4xl font-semibold">Plans & Pricing</h1>
           <p className="mt-3 text-white/70">
-            Choose the Aeon experience that fits your family and friends.
+            Choose the AeonAI experience that fits your family and friends.
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2">

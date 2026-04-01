@@ -22,7 +22,7 @@ export default function Home() {
             <span className="mx-auto mb-4 flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border border-white/15">
               <img
                 src="/aeon-logo.png"
-                alt="Aeon logo"
+                alt="AeonAI logo"
                 className="h-full w-full scale-150 object-cover opacity-80"
                 aria-hidden="false"
               />
@@ -31,13 +31,13 @@ export default function Home() {
               Friendly AI companion
             </span>
             <h1 className="text-4xl font-semibold leading-tight text-white sm:text-5xl sm:leading-tight">
-              Aeon — Shareable AI chat friend
+              AeonAI — Shareable AI chat friend
             </h1>
             <p className="text-lg text-white/80">
               Helpful, playful, and easy to share with family and friends.
             </p>
             <p className="text-sm font-medium text-white/60">
-              Aeon is an iPhone-only AI companion built for everyday help.
+              AeonAI is an iPhone-only AI companion built for everyday help.
             </p>
           </div>
 
