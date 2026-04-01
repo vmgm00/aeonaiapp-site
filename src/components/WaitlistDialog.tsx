@@ -169,7 +169,7 @@ function WaitlistDialog({ onClose, onSuccess }: WaitlistDialogProps) {
       >
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-semibold text-white">
-            Aeon App Waiting List
+            Get Updates
           </h2>
           <button
             type="button"
@@ -272,7 +272,7 @@ export function WaitlistTrigger({
         style={style}
         onClick={() => setOpen(true)}
       >
-        Aeon App Waiting List
+        Get Updates
       </button>
       {open && (
         <WaitlistDialog
