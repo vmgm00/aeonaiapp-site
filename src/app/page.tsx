@@ -9,8 +9,6 @@ const PRIVACY_URL =
 const TERMS_URL =
   process.env.NEXT_PUBLIC_ENGINE_TERMS ??
   "https://www.engineailabs.com/terms";
-const WEB_URL =
-  process.env.NEXT_PUBLIC_AEON_WEB_URL ?? "https://app.aeonaiapp.com";
 
 export default function Home() {
   const linkClassName =
@@ -39,18 +37,11 @@ export default function Home() {
               Helpful, playful, and easy to share with family and friends.
             </p>
             <p className="text-sm font-medium text-white/60">
-              Use Aeon Web in your browser while the iOS app gets ready.
+              Aeon is an iPhone-only AI companion built for everyday help.
             </p>
           </div>
 
           <div className="flex flex-col items-center gap-4 md:flex-row md:items-center md:gap-6">
-            <a
-              className="inline-flex items-center justify-center rounded-full px-10 py-3 text-base font-semibold text-white transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--aeon-tint)] !text-white"
-              style={{ backgroundColor: "rgba(138, 180, 255, 0.65)" }}
-              href={WEB_URL}
-            >
-              Aeon Web
-            </a>
             <WaitlistTrigger
               className="inline-flex items-center justify-center rounded-full px-10 py-3 text-base font-semibold text-white transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--aeon-tint)] !text-white"
               style={{ backgroundColor: "rgba(138, 180, 255, 0.65)" }}
