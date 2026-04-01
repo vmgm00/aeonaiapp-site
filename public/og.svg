@@ -9,17 +9,17 @@
     </filter>
   </defs>
   <rect width="1200" height="630" rx="48" fill="url(#aeonGradient)" />
-  <g opacity="0.25" filter="url(#blur)">
-    <circle cx="850" cy="220" r="180" fill="none" stroke="#8ab4ff" stroke-width="10" />
-    <path
-      d="M720 420c50-90 110-160 130-250 22 90 72 160 130 250"
-      fill="none"
-      stroke="#8ab4ff"
-      stroke-width="10"
-      stroke-linecap="round"
-    />
-    <circle cx="850" cy="120" r="28" fill="#8ab4ff" />
+  <g filter="url(#blur)">
+    <ellipse cx="860" cy="315" rx="170" ry="150" fill="#8ab4ff" opacity="0.18" />
   </g>
+  <image
+    href="/aeon-logo.png"
+    x="640"
+    y="48"
+    width="420"
+    height="534"
+    preserveAspectRatio="xMidYMid meet"
+  />
   <text
     x="120"
     y="300"
