@@ -1,5 +1,4 @@
-import { WaitlistTrigger } from "@/components/WaitlistDialog";
-
+const APP_STORE_URL = "https://apps.apple.com/app/aeonai/id6757899057";
 const SUPPORT_URL =
   process.env.NEXT_PUBLIC_ENGINE_SUPPORT ??
   "https://www.engineailabs.com/support";
@@ -42,10 +41,15 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center gap-4 md:flex-row md:items-center md:gap-6">
-            <WaitlistTrigger
+            <a
               className="inline-flex items-center justify-center rounded-full px-10 py-3 text-base font-semibold text-white transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--aeon-tint)] !text-white"
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ backgroundColor: "rgba(138, 180, 255, 0.65)" }}
-            />
+            >
+              Download on the App Store
+            </a>
             <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-white/60 md:justify-start">
               <span className="rounded-full border border-white/10 px-3 py-1 text-xs uppercase tracking-[0.3em] text-white/70">
                 Share with family
