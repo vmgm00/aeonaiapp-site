@@ -78,7 +78,7 @@ function WaitlistDialog({ onClose, onSuccess }: WaitlistDialogProps) {
         By submitting, you confirm you are 13+ and agree to our{" "}
         <a
           className="text-[var(--aeon-tint)] underline"
-          href="https://www.engineailabs.com/privacy"
+          href="/privacy"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -87,7 +87,7 @@ function WaitlistDialog({ onClose, onSuccess }: WaitlistDialogProps) {
         and{" "}
         <a
           className="text-[var(--aeon-tint)] underline"
-          href="https://www.engineailabs.com/terms"
+          href="/terms"
           target="_blank"
           rel="noopener noreferrer"
         >

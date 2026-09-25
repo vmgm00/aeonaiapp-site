@@ -1,139 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
+import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import "./globals.css";
 
-const SUPPORT_URL =
-  process.env.NEXT_PUBLIC_ENGINE_SUPPORT ??
-  "https://www.engineailabs.com/support";
-const PRIVACY_URL =
-  process.env.NEXT_PUBLIC_ENGINE_PRIVACY ??
-  "https://www.engineailabs.com/privacy";
-const TERMS_URL =
-  process.env.NEXT_PUBLIC_ENGINE_TERMS ??
-  "https://www.engineailabs.com/terms";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
+const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"], display: "swap" });
+const description = "AeonAI is an iPhone-only AI companion built for everyday help, voice conversations, and staying connected.";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.aeonaiapp.com"),
-  title: "AeonAI — Shareable AI chat friend",
-  description:
-    "AeonAI is your friendly AI companion you can share with family and friends.",
-  openGraph: {
-    title: "AeonAI — Shareable AI chat friend",
-    description:
-      "AeonAI is your friendly AI companion you can share with family and friends.",
-    url: "https://www.aeonaiapp.com",
-    images: ["/og.svg"],
-  },
-  icons: {
-    icon: [
-      {
-        url: "/favicon.ico",
-        sizes: "any",
-      },
-      {
-        url: "/icon.png",
-        type: "image/png",
-        sizes: "512x512",
-      },
-    ],
-    apple: [
-      {
-        url: "/apple-icon.png",
-        type: "image/png",
-        sizes: "180x180",
-      },
-    ],
-    shortcut: ["/favicon.ico"],
-  },
+  title: { default: "AeonAI — An AI companion for everyday help", template: "%s | AeonAI" },
+  description,
+  applicationName: "AeonAI",
+  openGraph: { type: "website", siteName: "AeonAI", title: "AeonAI — Everything within reach", description, locale: "en_US", images: [{ url: "/brand/aeonai-app-icon.png", width: 1024, height: 1024, alt: "AeonAI's luminous blue-white orbital app icon" }] },
+  twitter: { card: "summary", title: "AeonAI — Everything within reach", description, images: ["/brand/aeonai-app-icon.png"] },
+  icons: { icon: [{ url: "/brand/aeonai-app-icon.png", type: "image/png", sizes: "1024x1024" }], apple: [{ url: "/brand/aeonai-app-icon.png", type: "image/png", sizes: "1024x1024" }] },
 };
-
-export const viewport: Viewport = {
-  themeColor: "#0b0b0f",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-[var(--aeon-bg)] text-[var(--aeon-text)] antialiased`}
-      >
-        <div className="flex min-h-screen flex-col">
-          <header className="border-b border-white/10">
-            <div className="mx-auto flex w-full max-w-5xl items-center justify-start px-6 py-5">
-              <div className="flex items-center gap-2 text-[var(--aeon-text)]">
-                <span className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-white/15 bg-white/5">
-                  <img
-                    src="/aeon-logo.png"
-                    alt="AeonAI logo"
-                    className="h-full w-full scale-125 object-cover"
-                    aria-hidden="false"
-                  />
-                </span>
-                <span className="text-lg font-semibold tracking-tight">AeonAI</span>
-              </div>
-            </div>
-          </header>
-          <main className="flex flex-1">{children}</main>
-          <footer className="border-t border-white/10">
-            <div className="mx-auto flex w-full max-w-5xl flex-col items-center gap-3 px-6 py-6 text-sm">
-              <nav className="flex flex-wrap items-center gap-2 text-[var(--aeon-tint)]">
-                <a
-                  className="font-medium transition hover:text-white"
-                  href={SUPPORT_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Support
-                </a>
-                <span className="text-white/50">·</span>
-                <a
-                  className="font-medium transition hover:text-white"
-                  href={PRIVACY_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Privacy Policy
-                </a>
-                <span className="text-white/50">·</span>
-                <a
-                  className="font-medium transition hover:text-white"
-                  href={TERMS_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Terms of Service
-                </a>
-              </nav>
-              <p className="text-xs text-white/70">
-                An{" "}
-                <a
-                  className="font-medium text-[var(--aeon-tint)]"
-                  href="https://www.engineailabs.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Engine AI Labs LLC
-                </a>{" "}
-                product
-              </p>
-            </div>
-          </footer>
-        </div>
-      </body>
-    </html>
-  );
+export const viewport: Viewport = { themeColor: "#03060d", colorScheme: "dark" };
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="en"><body className={geist.variable}><a className="skip-link" href="#main-content">Skip to content</a><div className="site-stars" aria-hidden="true" /><SiteHeader /><main id="main-content" tabIndex={-1}>{children}</main><SiteFooter /></body></html>;
 }

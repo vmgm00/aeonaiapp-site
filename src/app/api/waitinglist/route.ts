@@ -83,15 +83,10 @@ At: ${new Date().toISOString()}`,
       <div style="font-family: Arial, sans-serif; color: #111; line-height: 1.5;">
         <p>Hi ${firstName},</p>
         <p>Thanks for your interest in <strong>AeonAI</strong>! We’ll email you with updates.</p>
-        <p>AeonAI is branded in-app as ‘Aeon.’</p>
-        <p><strong>Our plans</strong></p>
-        <ul>
-          <li><strong>AeonAI Free</strong> — Ads + essential access, unlimited text & voice-to-text, 2 contacts, 24-hour memory</li>
-          <li><strong>AeonAI Plus $2/mo</strong> — Unlimited text & voice, unlimited contacts & DMs, 7-day memory, ad-free</li>
-          <li><strong>AeonAI Pro $5/mo</strong> — Everything in Plus + 30-day priority memory + Family Sharing (1 extra user)</li>
-          <li><strong>AeonAI Pro Annual $45/yr</strong> — Everything in Pro + unlimited memory + Family Sharing (3 extra users)</li>
-        </ul>
-        <p style="font-size:12px;color:#9aa0a6">You confirm you are 13+ and agree to our <a href="https://www.engineailabs.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a> and <a href="https://www.engineailabs.com/terms" target="_blank" rel="noreferrer">Terms</a>.</p>
+        <p>AeonAI is an iPhone-only AI companion built for everyday help, voice conversations, and staying connected.</p>
+        <p>AeonAI is available at no cost. Included usage limits may apply to Chat and Voice.</p>
+        <p><a href="https://apps.apple.com/app/aeonai/id6757899057">Download AeonAI on the App Store</a></p>
+        <p style="font-size:12px;color:#9aa0a6">You confirm you are 13+ and agree to the AeonAI <a href="https://www.aeonaiapp.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a> and <a href="https://www.aeonaiapp.com/terms" target="_blank" rel="noreferrer">Terms</a>.</p>
       </div>
     `;
 
