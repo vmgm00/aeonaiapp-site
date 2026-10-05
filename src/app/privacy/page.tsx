@@ -42,6 +42,11 @@ export default function PrivacyPage() {
             Engine AI Labs does not ordinarily keep raw voice recordings on its
             servers during routine processing.
           </p>
+          <p>
+            If you expressly submit a Voice report, the transcript or other
+            content you choose to include may be kept as part of that report.
+            This is separate from ordinary Voice processing.
+          </p>
         </section>
         <section>
           <h2>Server-held information</h2>
@@ -56,6 +61,10 @@ export default function PrivacyPage() {
             identifiers, and text or transcripts you chose to submit. We may
             retain these records as needed for support, safety, and legal
             purposes.
+          </p>
+          <p>
+            Text or transcripts submitted in a report may themselves contain
+            identifying information, even if an account identifier is removed.
           </p>
         </section>
         <section>
@@ -90,8 +99,22 @@ export default function PrivacyPage() {
           <p>
             To delete your account, go to{" "}
             <strong>Chat → tap + → Settings → Account → Delete Account</strong>.
-            Apple-linked accounts may require fresh Sign in with Apple
-            authorization to complete deletion.
+            Apple-linked accounts may be asked to confirm their identity with
+            Sign in with Apple. AeonAI may use that fresh Apple authorization to
+            request removal of its Sign in with Apple authorization before
+            deleting the AeonAI account.
+          </p>
+          <p>
+            If automatic Apple authorization removal cannot be completed, the app
+            provides a separate <strong>Delete Aeon account only</strong> option.
+            This deletes the AeonAI account without claiming that Apple
+            authorization was automatically removed. The app provides guidance
+            for manually removing AeonAI&apos;s Apple authorization in that case.
+          </p>
+          <p>
+            Deleting your AeonAI account does not delete your Apple Account and
+            does not automatically cancel Apple subscription billing. Manage or
+            cancel your subscription through Apple.
           </p>
           <p>
             Account deletion is intended to remove your account and associated app

@@ -19,7 +19,7 @@ export default function Home() {
       </div>
       <div className="hero-product" aria-label="AeonAI on iPhone">
         <div className="product-halo" aria-hidden="true" />
-        <ProductImage className="device hero-voice" file="06_voice.png" alt="AeonAI Voice listening screen with its waveform and voice controls." priority />
+        <ProductImage className="device hero-voice" file="01_chat_day_planning.png" alt="AeonAI Chat helping plan a relaxed Saturday in Santa Monica." priority />
         <ProductImage className="device hero-launcher" file="05_launcher.png" alt="AeonAI Chat on iPhone with the real Contacts, Voice, Messages, and Settings launcher." priority />
         <p className="composition-caption">A little help. A real connection.</p>
       </div>
@@ -27,8 +27,8 @@ export default function Home() {
     <section id="experience" className="experience section-shell" aria-labelledby="experience-title">
       <div className="section-heading centered"><p className="eyebrow">The AeonAI experience</p><h2 id="experience-title">One conversation.<br /><span>More ways to connect.</span></h2><p>From a quick question to a familiar voice.<br />It all starts right here.</p></div>
       <div className="voice-story editorial-row">
-        <div className="story-copy"><p className="eyebrow"><span className="section-number">01 /</span> Chat &amp; Voice</p><h3>Type a thought.<br />Talk it through.</h3><p>Ask for a hand with the everyday. Explore an idea in Chat, or open Voice when you&apos;d rather speak.</p><p className="quiet-copy">Your conversation, at your pace.</p></div>
-        <figure className="voice-figure"><ProductImage className="glass-detail voice-detail" file="06_voice.png" alt="The real AeonAI Voice panel, showing Listening, End voice, and remaining included voice usage." /><figcaption>Speak when you want.</figcaption></figure>
+        <div className="story-copy"><p className="eyebrow"><span className="section-number">01 /</span> Chat &amp; Voice</p><h3>Type a thought.<br />Talk it through.</h3><p>Ask for a hand with the everyday. Explore an idea in Chat, use supported web search for current information, or open Voice when you&apos;d rather speak.</p><p className="quiet-copy">Your conversation, at your pace.</p></div>
+        <figure className="voice-figure"><ProductImage className="glass-detail voice-detail" file="06_voice.png" alt="The real AeonAI Voice panel, showing its waveform, Listening, and End voice controls." /><figcaption>Speak when you want.</figcaption></figure>
       </div>
       <div className="connection-story editorial-row">
         <div className="connection-images"><figure><ProductImage className="glass-detail contacts-detail" file="07_contacts.png" alt="AeonAI Contacts with an Aeon handle, a contact request, and a saved contact." /><figcaption>Find each other with Aeon handles.</figcaption></figure><figure><ProductImage className="glass-detail messages-detail" file="08_messages.png" alt="A real person-to-person AeonAI direct message conversation with Leia." /><figcaption>A direct line to your people.</figcaption></figure></div>
@@ -47,10 +47,10 @@ export default function Home() {
       </div>
     </section>
     <section id="personal" className="personal-section" aria-labelledby="personal-title"><div className="section-shell editorial-row">
-      <figure className="persona-figure"><div className="product-halo" aria-hidden="true" /><ProductImage className="device persona-device" file="09_persona.png" alt="AeonAI Persona settings showing real choices including Professor, Witty, and Helpful AI." /></figure>
-      <div className="story-copy"><p className="eyebrow">Built around you</p><h2 id="personal-title">Make Aeon<br /><span>yours.</span></h2><p>A different tone. A familiar name.<br />A little more you in every conversation.</p><dl className="personal-details"><div><dt>Choose a persona.</dt><dd>Find a conversational style that fits the moment.</dd></div><div><dt>Go by your preferred name.</dt><dd>Make the conversation feel more personal.</dd></div><div><dt>Keep your controls within reach.</dt><dd>Manage your account and local AI Chat history in Settings.</dd></div></dl><Link className="text-link" href="/privacy">Explore privacy &amp; account controls <span aria-hidden="true">↗</span></Link></div>
+      <figure className="persona-figure"><div className="product-halo" aria-hidden="true" /><ProductImage className="device persona-device" file="05_launcher.png" alt="AeonAI Chat launcher with Settings and account controls within reach." /></figure>
+      <div className="story-copy"><p className="eyebrow">Built around you</p><h2 id="personal-title">Make Aeon<br /><span>yours.</span></h2><p>A different tone. A familiar name.<br />A little more you in every conversation.</p><dl className="personal-details"><div><dt>Choose a persona.</dt><dd>Choose Friendly, Professional, or Sarcastic to fit the moment.</dd></div><div><dt>Go by your preferred name.</dt><dd>Make the conversation feel more personal.</dd></div><div><dt>Keep your controls within reach.</dt><dd>Manage your account, AI &amp; Data consent, and local AI Chat history in Settings.</dd></div></dl><Link className="text-link" href="/privacy">Explore privacy &amp; account controls <span aria-hidden="true">↗</span></Link></div>
     </div></section>
-    <section id="included-access" className="included-section section-shell" aria-labelledby="included-title"><div><p className="eyebrow">Included access</p><h2 id="included-title">Available at no cost.</h2></div><div><p>Chat, Voice, Contacts, Messages, personalization, and account controls are included.</p><p className="quiet-copy">Usage limits may apply to Chat and Voice.</p></div></section>
+    <section id="included-access" className="included-section section-shell" aria-labelledby="included-title"><div><p className="eyebrow">AeonAI Free</p><h2 id="included-title">Start with AeonAI Free.</h2></div><div><p>Chat, Voice, Contacts, Messages, personalization, and account controls are available on Free.</p><p className="quiet-copy">AeonAI Free uses the same AI quality as Paid. Usage limits apply.</p><Link className="text-link" href="/pricing">See plans &amp; pricing <span aria-hidden="true">↗</span></Link></div></section>
     <section className="closing-section section-shell" aria-labelledby="closing-title"><Image className="closing-icon" src="/brand/aeonai-app-icon.png" alt="AeonAI app icon" width={100} height={100} sizes="100px" /><p className="eyebrow">Your AI companion, always within reach.</p><h2 id="closing-title">Designed for iPhone.</h2><p>Everyday help. Voice conversations.<br />A place to stay connected.</p><AppStoreLink /></section>
   </>;
 }

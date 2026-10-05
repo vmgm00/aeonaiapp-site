@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Support",
   description:
-    "Get help with AeonAI account access, app feedback, privacy requests, account deletion, and local chat history.",
+    "Get help with AeonAI accounts, Monthly and Annual subscriptions, Apple-linked account deletion, privacy requests, and local chat history.",
   alternates: { canonical: "/support" },
 };
 
@@ -45,13 +45,45 @@ export default function SupportPage() {
           <h2>Delete your account</h2>
           <p>
             In AeonAI, go to <strong>Chat → tap + → Settings → Account → Delete Account</strong>.
-            For an Apple-linked account, the app may ask for fresh Sign in with
-            Apple authorization before completing deletion.
+            For an Apple-linked account, the app may ask you to confirm your
+            identity with Sign in with Apple. AeonAI may use that fresh
+            authorization to request removal of its Apple authorization before
+            deleting the AeonAI account.
+          </p>
+          <p>
+            If automatic Apple authorization removal cannot be completed, choose
+            the separate <strong>Delete Aeon account only</strong> option. This
+            deletes your AeonAI account without claiming Apple authorization was
+            automatically removed. The app provides manual Apple authorization
+            removal guidance for that case.
+          </p>
+          <p>
+            Deleting AeonAI does not delete your Apple Account and does not
+            automatically cancel an Apple subscription. Manage or cancel billing
+            through Apple separately.
           </p>
           <p>
             Limited report, safety, fraud-prevention, or legal records may be
             retained where necessary. Reports submitted for safety or moderation
             may remain after account deletion, including text you chose to submit.
+          </p>
+        </section>
+        <section>
+          <h2>Subscriptions and billing</h2>
+          <p>
+            AeonAI has Free access and one Paid service level. Monthly and Annual
+            are billing options for the same Paid capabilities and allowances.
+            Annual is billed upfront, with allowances operating on monthly
+            allowance windows for both options. See <Link href="/pricing">plans
+            &amp; pricing</Link> for details.
+          </p>
+          <p>
+            Subscriptions renew automatically unless canceled through Apple.
+            App Store pricing may vary by storefront. To manage or cancel your
+            subscription on iPhone, open Apple Settings, tap your name, then
+            Subscriptions and select AeonAI. Follow{" "}
+            <a href="https://support.apple.com/en-us/118428">Apple&apos;s subscription
+            cancellation guidance</a> to cancel billing.
           </p>
         </section>
         <section>

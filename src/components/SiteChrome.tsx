@@ -34,9 +34,9 @@ export function UtilityLinks() {
 }
 
 export function SiteHeader() {
-  return <header className="site-header"><div className="site-header-inner"><Link className="site-brand" href="/" aria-label="AeonAI home"><Image src="/brand/aeonai-app-icon.png" alt="" width={38} height={38} /><span>AeonAI</span></Link><nav className="header-navigation" aria-label="Main navigation"><Link href="/#experience">The experience</Link><Link href="/#personal">Made for you</Link></nav><AppStoreLink compact /></div></header>;
+  return <header className="site-header"><div className="site-header-inner"><Link className="site-brand" href="/" aria-label="AeonAI home"><Image src="/brand/aeonai-app-icon.png" alt="" width={38} height={38} /><span>AeonAI</span></Link><nav className="header-navigation" aria-label="Main navigation"><Link href="/#experience">The experience</Link><Link href="/#personal">Made for you</Link><Link href="/pricing">Pricing</Link></nav><AppStoreLink compact /></div></header>;
 }
 
 export function SiteFooter() {
-  return <footer className="site-footer"><div className="footer-top"><Link className="footer-brand" href="/" aria-label="AeonAI home"><Image src="/brand/aeonai-wordmark.png" alt="AeonAI" width={2048} height={682} sizes="180px" /></Link><nav aria-label="Footer navigation">{destinations.map(({ href, label }) => <Link href={href} key={href}>{label}</Link>)}</nav></div><div className="footer-bottom"><p>An iPhone experience by <a href="https://www.engineailabs.com">Engine AI Labs LLC</a>.</p><p>© {new Date().getFullYear()} Engine AI Labs LLC</p></div></footer>;
+  return <footer className="site-footer"><div className="footer-top"><Link className="footer-brand" href="/" aria-label="AeonAI home"><Image src="/brand/aeonai-wordmark.png" alt="AeonAI" width={2048} height={682} sizes="180px" /></Link><nav aria-label="Footer navigation"><Link href="/pricing">Pricing</Link>{destinations.map(({ href, label }) => <Link href={href} key={href}>{label}</Link>)}</nav></div><div className="footer-bottom"><p>An iPhone experience by <a href="https://www.engineailabs.com">Engine AI Labs LLC</a>.</p><p>© {new Date().getFullYear()} Engine AI Labs LLC</p></div></footer>;
 }

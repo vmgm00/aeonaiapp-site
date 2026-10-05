@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Terms for using AeonAI, including accounts, AI features, third-party providers, deletion, and user responsibilities.",
+    "Terms for using AeonAI, including Free and Paid access, Monthly and Annual subscriptions, account deletion, and user responsibilities.",
   alternates: { canonical: "/terms" },
 };
 
@@ -27,6 +27,30 @@ export default function TermsPage() {
             content, interactions, credentials, and account activity. Illegal,
             harmful, fraudulent, or abusive use, unauthorized access, and
             interference with AeonAI are prohibited.
+          </p>
+        </section>
+        <section>
+          <h2>Free access and Paid subscriptions</h2>
+          <p>
+            AeonAI offers Free access and one Paid service level with Monthly and
+            Annual billing options. Both options have the same Paid capabilities
+            and allowances, and Free and Paid use the same AI quality. Usage
+            limits apply.
+          </p>
+          <p>
+            U.S. pricing is $11.99/month for Monthly or $119.99/year for Annual,
+            billed upfront. App Store pricing may vary by storefront.
+            Subscriptions renew automatically unless canceled. Manage or cancel
+            your subscription through Apple.
+          </p>
+          <p>
+            Paid includes 100 successful AI Chat turns per monthly allowance
+            window, up to 25 hosted web searches within those Chat turns, and 10
+            separate successful Voice turns per monthly allowance window. Annual
+            also uses monthly allowance windows. Unused allowances do not roll
+            over. Contacts and person-to-person Messages are included; Messages
+            are separate from Chat and Voice allowances. See{" "}
+            <Link href="/pricing">plans &amp; pricing</Link> for details.
           </p>
         </section>
         <section>
@@ -55,7 +79,17 @@ export default function TermsPage() {
             You may stop using AeonAI at any time. To delete your account, go to{" "}
             <strong>Chat → tap + → Settings → Account → Delete Account</strong>.
             Apple-linked accounts may require fresh Sign in with Apple
-            authorization.
+            confirmation so AeonAI can request removal of its Apple authorization
+            before deleting the AeonAI account.
+          </p>
+          <p>
+            If automatic Apple authorization removal cannot be completed, the
+            app provides a separate <strong>Delete Aeon account only</strong>
+            {" "}option and manual Apple authorization removal guidance. That option
+            deletes the AeonAI account without claiming Apple authorization was
+            automatically removed. Deleting AeonAI does not delete your Apple
+            Account and does not automatically cancel Apple subscription billing.
+            Manage or cancel your subscription through Apple separately.
           </p>
           <p>
             To clear local chat history, go to{" "}

@@ -84,7 +84,7 @@ At: ${new Date().toISOString()}`,
         <p>Hi ${firstName},</p>
         <p>Thanks for your interest in <strong>AeonAI</strong>! We’ll email you with updates.</p>
         <p>AeonAI is an iPhone-only AI companion built for everyday help, voice conversations, and staying connected.</p>
-        <p>AeonAI is available at no cost. Included usage limits may apply to Chat and Voice.</p>
+        <p>Start with AeonAI Free. Free and Paid use the same AI quality. Usage limits apply. <a href="https://www.aeonaiapp.com/pricing">See plans &amp; pricing</a>.</p>
         <p><a href="https://apps.apple.com/app/aeonai/id6757899057">Download AeonAI on the App Store</a></p>
         <p style="font-size:12px;color:#9aa0a6">You confirm you are 13+ and agree to the AeonAI <a href="https://www.aeonaiapp.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a> and <a href="https://www.aeonaiapp.com/terms" target="_blank" rel="noreferrer">Terms</a>.</p>
       </div>

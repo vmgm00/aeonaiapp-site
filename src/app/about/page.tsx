@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { AppStoreLink } from "@/components/SiteChrome";
 
 export const metadata: Metadata = {
@@ -35,9 +36,11 @@ export default function AboutPage() {
         <section className="document-callout">
           <h2>Designed for iPhone.</h2>
           <p>
-            AeonAI is available at no cost. Included usage limits may apply to
-            Chat and Voice.
+            Start with AeonAI Free. Free and Paid use the same AI quality.
+            Usage limits apply. One Paid service level is available with Monthly
+            or Annual billing.
           </p>
+          <p><Link href="/pricing">See plans &amp; pricing</Link>.</p>
           <AppStoreLink />
         </section>
         <section>

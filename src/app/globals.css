@@ -85,8 +85,9 @@ main { position: relative; }
 .voice-figure { width: 100%; max-width: 355px; justify-self: end; }
 .glass-detail { border: 1px solid #91b6ed42; border-radius: 26px; box-shadow: 0 25px 60px #0007, 0 0 0 5px #aacfff04; }
 .glass-detail img { height: 100%; object-fit: cover; }
-.voice-detail { aspect-ratio: 942 / 1190; }
-.voice-detail img { object-position: 50% 57%; }
+/* Frame the Voice controls without the obsolete weekly allowance label. */
+.voice-detail { aspect-ratio: 942 / 1000; }
+.voice-detail img { object-position: 50% 52%; }
 figcaption { color: #8c9db4; margin-top: 22px; font-size: 11px; line-height: 1.6; }
 .voice-figure figcaption, .planning-figure figcaption { text-align: center; }
 .connection-story { margin-top: 120px; grid-template-columns: 1.15fr 1fr; gap: 90px; }
@@ -162,6 +163,8 @@ figcaption { color: #8c9db4; margin-top: 22px; font-size: 11px; line-height: 1.6
 .document-callout { padding: 25px 28px; margin-block: 25px; background: #b1ceff07; border: 1px solid var(--line); border-radius: 18px; }
 .document-body .app-store-link { margin-block: 14px; }
 .document-body .app-store-link strong { color: inherit; }
+.document-body .plan-price { color: #b6c2d3; font-size: 17px; }
+.document-body .plan-price strong { font-size: 36px; letter-spacing: -.04em; }
 
 @media (min-width: 1500px) { .hero { min-height: 820px; } }
 @media (max-width: 1100px) {
