@@ -98,11 +98,28 @@ export default function TermsPage() {
             or all server-held data.
           </p>
           <p>
-            Account deletion is intended to remove your account and associated app
-            data. Necessary report, safety, fraud-prevention, or legal records may
-            remain, including text you submitted in reports. Accounts may be
-            suspended or terminated for violations or risks to users, AeonAI, or
-            the public.
+            Account deletion immediately removes your normal AeonAI account and
+            associated account data, subject to the limited retention categories
+            disclosed in the <Link href="/privacy">AeonAI Privacy Policy</Link>.
+          </p>
+          <p>
+            Minimal purchase-ownership information may be retained for up to 24
+            months after account deletion for ownership protection, legitimate
+            authenticated purchase-recovery review, and preservation of
+            applicable prior allowance use. Recovery requests require
+            authentication and review; purchase ownership does not transfer
+            automatically to a recreated AeonAI account.
+          </p>
+          <p>
+            Expressly submitted safety reports may be retained for up to 90 days
+            after report submission for safety, moderation, and support review.
+            At expiry, purchase records and report content are no longer used
+            through normal ownership, recovery, moderation, or support workflows
+            and are removed through AeonAI&apos;s scheduled retention process.
+          </p>
+          <p>
+            Accounts may be suspended or terminated for violations or risks to
+            users, AeonAI, or the public.
           </p>
         </section>
         <section>

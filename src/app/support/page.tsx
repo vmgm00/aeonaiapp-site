@@ -63,9 +63,13 @@ export default function SupportPage() {
             through Apple separately.
           </p>
           <p>
-            Limited report, safety, fraud-prevention, or legal records may be
-            retained where necessary. Reports submitted for safety or moderation
-            may remain after account deletion, including text you chose to submit.
+            Account deletion immediately removes your normal account and
+            associated account data, subject to limited retention: minimal
+            purchase-ownership records may be kept for up to 24 months after
+            account deletion, and expressly submitted safety reports for up to
+            90 days after submission. See the{" "}
+            <Link href="/privacy">AeonAI Privacy Policy</Link> for scope and
+            expiry details.
           </p>
         </section>
         <section>
